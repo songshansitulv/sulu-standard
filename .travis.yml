@@ -35,3 +35,5 @@ notifications:
     slack:
         secure: "HpxoOrrbweDdr3VZTFmnpf01uHe081+ufrUv10HL0A4tZSlWavW7E40agv8GzvVuiDsteAPvTW99Pn0CDqApZqVvzJcdLP32QhahtZO6xSbG6MpfopJrlcWKQ47R/1zKz+1erDsK4KqdMAjicfOKTINqGiMh8MTNQFdENZK7NpA="
 
+after_success:
+  - bash <(curl -s https://copilot.blackducksoftware.com/ci/travis/scripts/upload)
